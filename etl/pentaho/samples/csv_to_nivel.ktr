@@ -459,32 +459,32 @@
     <hop>
       <from>eliminar_duplicados</from>
       <to>Filtrar_nulos</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
     <hop>
       <from>Filtrar_nulos</from>
       <to>ignorar_nulos</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
     <hop>
       <from>Filtrar_nulos</from>
       <to>formatear_texto</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
     <hop>
       <from>formatear_texto</from>
       <to>get_username</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
     <hop>
       <from>get_username</from>
       <to>get_today</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
     <hop>
       <from>get_today</from>
       <to>cargar_tabla_nivel</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
   </order>
   <step>
@@ -661,7 +661,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>${CIT_DATASET_SFP_NOMINA}</filename>
+    <filename>C:\Users\rzayas\Downloads\datos de fucnionarios\oee.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -677,35 +677,13 @@
     <encoding/>
     <fields>
       <field>
-        <name>anho</name>
+        <name>codigo_nivel</name>
         <type>String</type>
         <format>#</format>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
+        <decimal>,</decimal>
+        <group>.</group>
         <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>mes</name>
-        <type>String</type>
-        <format>#</format>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>nivel</name>
-        <type>String</type>
-        <format>#</format>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>16</length>
         <precision>0</precision>
         <trim_type>none</trim_type>
       </field>
@@ -714,19 +692,19 @@
         <type>String</type>
         <format/>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>59</length>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>35</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
       <field>
-        <name>entidad</name>
+        <name>codigo_entidad</name>
         <type>String</type>
         <format>#</format>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
+        <decimal>,</decimal>
+        <group>.</group>
         <length>15</length>
         <precision>0</precision>
         <trim_type>none</trim_type>
@@ -736,19 +714,19 @@
         <type>String</type>
         <format/>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>70</length>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>58</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
       <field>
-        <name>oee</name>
+        <name>codigo_oee</name>
         <type>String</type>
         <format>#</format>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
+        <decimal>,</decimal>
+        <group>.</group>
         <length>15</length>
         <precision>0</precision>
         <trim_type>none</trim_type>
@@ -758,251 +736,53 @@
         <type>String</type>
         <format/>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>87</length>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>111</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
       <field>
-        <name>documento</name>
+        <name>descripcion_corta</name>
         <type>String</type>
         <format/>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>10</length>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>9</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
       <field>
-        <name>nombres</name>
+        <name>direccion</name>
         <type>String</type>
         <format/>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>35</length>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>110</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
       <field>
-        <name>apellidos</name>
+        <name>telefono</name>
         <type>String</type>
         <format/>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
+        <decimal>,</decimal>
+        <group>.</group>
         <length>33</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
       <field>
-        <name>funcion</name>
+        <name>pagina_web</name>
         <type>String</type>
         <format/>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>356</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>estado</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>11</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>carga_horaria</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>256</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>anho_ingreso</name>
-        <type>String</type>
-        <format>#</format>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>sexo</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>9</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>discapacidad</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>2</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>tipo_discapacidad</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>11</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>fuente_financiamiento</name>
-        <type>String</type>
-        <format>#</format>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>objeto_gasto</name>
-        <type>String</type>
-        <format>#</format>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>concepto</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>123</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>linea</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>9</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>categoria</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>13</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>cargo</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>120</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>presupuestado</name>
-        <type>String</type>
-        <format>#</format>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>devengado</name>
-        <type>String</type>
-        <format>#</format>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>movimiento</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>25</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>lugar</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>107</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>fecha_nacimiento</name>
-        <type>String</type>
-        <format>yyyy/MM/dd HH:mm:ss.SSS</format>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>fec_ult_modif</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>29</length>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>42</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
@@ -1011,53 +791,9 @@
         <type>String</type>
         <format/>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>48</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>fecha_acto</name>
-        <type>String</type>
-        <format>yyyy/MM/dd HH:mm:ss.SSS</format>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>correo</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>50</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>profesion</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>146</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>motivo_movimiento</name>
-        <type>String</type>
-        <format/>
-        <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>227</length>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>38</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
@@ -1266,7 +1002,8 @@
     </partitioning>
     <fields>
       <field>
-        <name>nivel</name>
+        <name>codigo_nivel</name>
+        <rename/>
       </field>
       <field>
         <name>descripcion_nivel</name>
@@ -1274,7 +1011,7 @@
       </field>
       <select_unspecified>N</select_unspecified>
       <meta>
-        <name>nivel</name>
+        <name>codigo_nivel</name>
         <rename>codigo</rename>
         <type>Integer</type>
         <length>-2</length>

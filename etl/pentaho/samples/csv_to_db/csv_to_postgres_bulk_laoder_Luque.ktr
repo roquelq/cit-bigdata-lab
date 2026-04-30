@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>csv_to_postgres_bulk_laoder</name>
+    <name>csv_to_postgres_bulk_laoder_Luque</name>
     <description/>
     <extended_description/>
     <trans_version/>
@@ -438,10 +438,94 @@
   <order>
     <hop>
       <from>extraer_datos</from>
+      <to>Filter rows</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Filter rows</from>
+      <to>Otras Municipalidades</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Filter rows</from>
+      <to>Luque</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Luque</from>
       <to>PostgreSQL bulk loader</to>
       <enabled>Y</enabled>
     </hop>
   </order>
+  <step>
+    <name>Otras Municipalidades</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>512</xloc>
+      <yloc>320</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Filter rows</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <send_true_to>Luque</send_true_to>
+    <send_false_to>Otras Municipalidades</send_false_to>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>oee</leftvalue>
+        <function>=</function>
+        <rightvalue/>
+        <value>
+          <name>constant</name>
+          <type>String</type>
+          <text>179</text>
+          <length>-1</length>
+          <precision>-1</precision>
+          <isnull>N</isnull>
+          <mask/>
+        </value>
+      </condition>
+    </compare>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>512</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
   <step>
     <name>PostgreSQL bulk loader</name>
     <type>PGBulkLoader</type>
@@ -455,7 +539,7 @@
     </partitioning>
     <connection>pg_cit_bigdata_lab</connection>
     <schema>raw</schema>
-    <table>funcionarios_2015</table>
+    <table>luque_2025</table>
     <load_action>TRUNCATE</load_action>
     <dbname_override/>
     <enclosure>"</enclosure>
@@ -645,8 +729,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>656</xloc>
-      <yloc>256</yloc>
+      <xloc>816</xloc>
+      <yloc>192</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -661,7 +745,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>C:\Users\rzayas\Downloads\datos de fucnionarios\funcionarios_2015_12.csv\funcionarios_2015_12.csv</filename>
+    <filename>C:\Users\rzayas\Downloads\datos de fucnionarios\funcionarios_2025_12.csv\funcionarios_2025_12.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -1071,8 +1155,33 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>352</xloc>
-      <yloc>256</yloc>
+      <xloc>304</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Luque</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>656</xloc>
+      <yloc>192</yloc>
       <draw>Y</draw>
     </GUI>
   </step>

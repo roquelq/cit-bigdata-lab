@@ -454,8 +454,8 @@
       <schema_name/>
     </partitioning>
     <connection>pg_cit_bigdata_lab</connection>
-    <schema>${CIT_PG_SCHEMA_SAMPLE}</schema>
-    <table>raw_nomina_sfp</table>
+    <schema>raw</schema>
+    <table>funcionarios_2021_1</table>
     <commit>0</commit>
     <truncate>Y</truncate>
     <ignore_errors>N</ignore_errors>
@@ -621,8 +621,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>688</xloc>
-      <yloc>272</yloc>
+      <xloc>672</xloc>
+      <yloc>112</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -637,7 +637,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>${CIT_DATASET_SFP_NOMINA}</filename>
+    <filename>C:\Users\rzayas\Downloads\funcionarios_2021_1.csv\funcionarios_2021_1.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -657,8 +657,8 @@
         <type>String</type>
         <format>#</format>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
+        <decimal>,</decimal>
+        <group>.</group>
         <length>15</length>
         <precision>0</precision>
         <trim_type>none</trim_type>
@@ -668,8 +668,8 @@
         <type>String</type>
         <format>#</format>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
+        <decimal>,</decimal>
+        <group>.</group>
         <length>15</length>
         <precision>0</precision>
         <trim_type>none</trim_type>
@@ -679,9 +679,9 @@
         <type>String</type>
         <format>#</format>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>16</length>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
         <precision>0</precision>
         <trim_type>none</trim_type>
       </field>
@@ -690,9 +690,9 @@
         <type>String</type>
         <format/>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>59</length>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
@@ -701,8 +701,8 @@
         <type>String</type>
         <format>#</format>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
+        <decimal>,</decimal>
+        <group>.</group>
         <length>15</length>
         <precision>0</precision>
         <trim_type>none</trim_type>
@@ -712,9 +712,9 @@
         <type>String</type>
         <format/>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>70</length>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>25</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
@@ -723,8 +723,8 @@
         <type>String</type>
         <format>#</format>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
+        <decimal>,</decimal>
+        <group>.</group>
         <length>15</length>
         <precision>0</precision>
         <trim_type>none</trim_type>
@@ -734,21 +734,21 @@
         <type>String</type>
         <format/>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>87</length>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>46</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
       <field>
         <name>documento</name>
         <type>String</type>
-        <format/>
+        <format>#</format>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>10</length>
-        <precision>-1</precision>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>15</length>
+        <precision>0</precision>
         <trim_type>none</trim_type>
       </field>
       <field>
@@ -756,9 +756,9 @@
         <type>String</type>
         <format/>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>35</length>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>17</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
@@ -767,9 +767,9 @@
         <type>String</type>
         <format/>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>33</length>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>22</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
@@ -778,9 +778,9 @@
         <type>String</type>
         <format/>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>356</length>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>41</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
@@ -789,9 +789,9 @@
         <type>String</type>
         <format/>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>11</length>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>10</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
@@ -800,9 +800,9 @@
         <type>String</type>
         <format/>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>256</length>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>34</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
@@ -811,8 +811,8 @@
         <type>String</type>
         <format>#</format>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
+        <decimal>,</decimal>
+        <group>.</group>
         <length>15</length>
         <precision>0</precision>
         <trim_type>none</trim_type>
@@ -822,8 +822,8 @@
         <type>String</type>
         <format/>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
+        <decimal>,</decimal>
+        <group>.</group>
         <length>9</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -833,8 +833,8 @@
         <type>String</type>
         <format/>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
+        <decimal>,</decimal>
+        <group>.</group>
         <length>2</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -842,12 +842,12 @@
       <field>
         <name>tipo_discapacidad</name>
         <type>String</type>
-        <format/>
+        <format>#.#</format>
         <currency>$</currency>
         <decimal>.</decimal>
         <group>,</group>
-        <length>11</length>
-        <precision>-1</precision>
+        <length>15</length>
+        <precision>0</precision>
         <trim_type>none</trim_type>
       </field>
       <field>
@@ -855,8 +855,8 @@
         <type>String</type>
         <format>#</format>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
+        <decimal>,</decimal>
+        <group>.</group>
         <length>15</length>
         <precision>0</precision>
         <trim_type>none</trim_type>
@@ -866,8 +866,8 @@
         <type>String</type>
         <format>#</format>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
+        <decimal>,</decimal>
+        <group>.</group>
         <length>15</length>
         <precision>0</precision>
         <trim_type>none</trim_type>
@@ -877,9 +877,9 @@
         <type>String</type>
         <format/>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>123</length>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>32</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
@@ -888,8 +888,8 @@
         <type>String</type>
         <format/>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
+        <decimal>,</decimal>
+        <group>.</group>
         <length>9</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -899,9 +899,9 @@
         <type>String</type>
         <format/>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>13</length>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>4</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
@@ -910,30 +910,30 @@
         <type>String</type>
         <format/>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>120</length>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>41</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
       <field>
         <name>presupuestado</name>
-        <type>Integer</type>
+        <type>String</type>
         <format>#</format>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
+        <decimal>,</decimal>
+        <group>.</group>
         <length>15</length>
         <precision>0</precision>
         <trim_type>none</trim_type>
       </field>
       <field>
         <name>devengado</name>
-        <type>Integer</type>
+        <type>String</type>
         <format>#</format>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
+        <decimal>,</decimal>
+        <group>.</group>
         <length>15</length>
         <precision>0</precision>
         <trim_type>none</trim_type>
@@ -941,23 +941,23 @@
       <field>
         <name>movimiento</name>
         <type>String</type>
-        <format/>
+        <format>#.#</format>
         <currency>$</currency>
         <decimal>.</decimal>
         <group>,</group>
-        <length>25</length>
-        <precision>-1</precision>
+        <length>15</length>
+        <precision>0</precision>
         <trim_type>none</trim_type>
       </field>
       <field>
         <name>lugar</name>
         <type>String</type>
-        <format/>
+        <format>#.#</format>
         <currency>$</currency>
         <decimal>.</decimal>
         <group>,</group>
-        <length>107</length>
-        <precision>-1</precision>
+        <length>15</length>
+        <precision>0</precision>
         <trim_type>none</trim_type>
       </field>
       <field>
@@ -965,8 +965,8 @@
         <type>String</type>
         <format>yyyy/MM/dd HH:mm:ss.SSS</format>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
+        <decimal>,</decimal>
+        <group>.</group>
         <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -976,8 +976,8 @@
         <type>String</type>
         <format/>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
+        <decimal>,</decimal>
+        <group>.</group>
         <length>29</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -987,9 +987,9 @@
         <type>String</type>
         <format/>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>48</length>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>47</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
@@ -998,8 +998,8 @@
         <type>String</type>
         <format>yyyy/MM/dd HH:mm:ss.SSS</format>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
+        <decimal>,</decimal>
+        <group>.</group>
         <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -1009,9 +1009,9 @@
         <type>String</type>
         <format/>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>50</length>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>33</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
@@ -1020,21 +1020,21 @@
         <type>String</type>
         <format/>
         <currency>$</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>146</length>
+        <decimal>,</decimal>
+        <group>.</group>
+        <length>26</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
       </field>
       <field>
         <name>motivo_movimiento</name>
         <type>String</type>
-        <format/>
+        <format>#.#</format>
         <currency>$</currency>
         <decimal>.</decimal>
         <group>,</group>
-        <length>227</length>
-        <precision>-1</precision>
+        <length>15</length>
+        <precision>0</precision>
         <trim_type>none</trim_type>
       </field>
     </fields>
@@ -1047,8 +1047,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>384</xloc>
-      <yloc>272</yloc>
+      <xloc>304</xloc>
+      <yloc>112</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
