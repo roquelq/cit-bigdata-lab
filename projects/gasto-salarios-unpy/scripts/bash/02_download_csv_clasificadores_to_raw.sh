@@ -37,9 +37,9 @@ FALLBACK_ENCODINGS=("ISO-8859-1" "WINDOWS-1252")
 # Formato por línea:
 #   nombre_salida_temp|id_google_drive|nombre_salida_raw_utf8
 FILES=(
-  "clasificador_gastos.csv|1NZJx9PDNzgvz-Uu7HLUztqoaWCqNTYWU|clasificador_gastos_utf8.csv"
-  "clasificador_oee.csv|1NZJx9PDNzgvz-Uu7HLUztqoaWCqNTYWU|clasificador_oee_utf8.csv"
-  "regimen_salarial_py.csv|1NZJx9PDNzgvz-Uu7HLUztqoaWCqNTYWU|regimen_salarial_py_utf8.csv"
+  "clasificador_gastos.csv|1qWP_5zzsNZ00ikkxvdIlCPw1BPlES4vn|clasificador_gastos_utf8.csv"
+  "clasificador_oee.csv|1qWP_5zzsNZ00ikkxvdIlCPw1BPlES4vn|clasificador_oee_utf8.csv"
+  "regimen_salarial_py.csv|1qWP_5zzsNZ00ikkxvdIlCPw1BPlES4vn|regimen_salarial_py_utf8.csv"
 )
 
 # ------------------------------------------------------------------------------
